@@ -26,7 +26,7 @@ data = loader.load()
 llm = OpenAI(temperature=0)
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 texts = text_splitter.split_documents(data)
-
+#test
 # Creates embeddings from each chunk
 embeddings = OpenAIEmbeddings()
 
